@@ -1,0 +1,15 @@
+diff --git a/node_modules/@react-native-community/masked-view/android/build.gradle b/node_modules/@react-native-community/masked-view/android/build.gradle
+index c4ee933..d94c0ab 100644
+--- a/node_modules/@react-native-community/masked-view/android/build.gradle
++++ b/node_modules/@react-native-community/masked-view/android/build.gradle
+@@ -6,7 +6,9 @@ buildscript {
+   if (project == rootProject) {
+     repositories {
+       google()
+-      jcenter()
++      // jcenter()
++       mavenCentral()
++        maven { url 'https://jitpack.io' }
+     }
+ 
+     dependencies {
